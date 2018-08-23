@@ -11,6 +11,17 @@
     <name>springboot</name>
     <description>Demo project for Spring Boot</description>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.10</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
     <modules>
         <module>sb1x</module>
         <module>sb2x</module>
