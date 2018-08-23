@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ks</groupId>
-    <artifactId>sb2.x</artifactId>
+    <artifactId>sb2x</artifactId>
     <version>20180823</version>
 
-    <name>spring-boot-hello</name>
+    <name>sb2x</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
