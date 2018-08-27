@@ -1,0 +1,48 @@
+[16048] 29 Mar 11:29:06.539 * Redis 3.2.100 (00000000/0) 64 bit, standalone mode, port 6379, pid 16048 ready to start.
+[16048] 29 Mar 11:29:06.541 # Server started, Redis version 3.2.100
+[16048] 29 Mar 11:29:06.542 * The server is now ready to accept connections on port 6379
+[4484] 29 Mar 11:30:15.895 # Creating Server TCP listening socket 127.0.0.1:6379: bind: No error
+[16048] 29 Mar 11:32:07.830 # User requested shutdown...
+[16048] 29 Mar 11:32:07.831 * Saving the final RDB snapshot before exiting.
+[16048] 29 Mar 11:32:07.844 * DB saved on disk
+[16048] 29 Mar 11:32:07.845 # Redis is now ready to exit, bye bye...
+[16496] 29 Mar 11:32:15.513 * Redis 3.2.100 (00000000/0) 64 bit, standalone mode, port 6379, pid 16496 ready to start.
+[16496] 29 Mar 11:32:15.515 # Server started, Redis version 3.2.100
+[16496] 29 Mar 11:32:15.516 * DB loaded from disk: 0.000 seconds
+[16496] 29 Mar 11:32:15.516 * The server is now ready to accept connections on port 6379
+[16496] 29 Mar 11:32:23.350 # User requested shutdown...
+[16496] 29 Mar 11:32:23.351 * Saving the final RDB snapshot before exiting.
+[16496] 29 Mar 11:32:23.368 * DB saved on disk
+[16496] 29 Mar 11:32:23.369 # Redis is now ready to exit, bye bye...
+[18184] 29 Mar 11:32:31.663 * Redis 3.2.100 (00000000/0) 64 bit, standalone mode, port 6379, pid 18184 ready to start.
+[18184] 29 Mar 11:32:31.666 # Server started, Redis version 3.2.100
+[18184] 29 Mar 11:32:31.667 * DB loaded from disk: 0.000 seconds
+[18184] 29 Mar 11:32:31.668 * The server is now ready to accept connections on port 6379
+[18184] 29 Mar 11:33:26.329 # User requested shutdown...
+[18184] 29 Mar 11:33:26.331 * Saving the final RDB snapshot before exiting.
+[18184] 29 Mar 11:33:26.357 * DB saved on disk
+[18184] 29 Mar 11:33:26.360 # Redis is now ready to exit, bye bye...
+[17600] 29 Mar 11:33:34.191 * Redis 3.2.100 (00000000/0) 64 bit, standalone mode, port 6379, pid 17600 ready to start.
+[17600] 29 Mar 11:33:34.192 # Server started, Redis version 3.2.100
+[17600] 29 Mar 11:33:34.193 * DB loaded from disk: 0.000 seconds
+[17600] 29 Mar 11:33:34.194 * The server is now ready to accept connections on port 6379
+[9008] 28 May 09:44:38.299 * Redis 3.2.100 (00000000/0) 64 bit, standalone mode, port 6379, pid 9008 ready to start.
+[9008] 28 May 09:44:38.301 # Server started, Redis version 3.2.100
+[9008] 28 May 09:44:38.302 * DB loaded from disk: 0.000 seconds
+[9008] 28 May 09:44:38.303 * The server is now ready to accept connections on port 6379
+[9008] 28 May 10:49:09.661 * 1 changes in 900 seconds. Saving...
+[9008] 28 May 10:49:09.807 * Background saving started by pid 6576
+[9008] 28 May 10:49:10.011 # fork operation complete
+[9008] 28 May 10:49:10.013 * Background saving terminated with success
+[9008] 28 May 10:59:04.421 * 10 changes in 300 seconds. Saving...
+[9008] 28 May 10:59:04.499 * Background saving started by pid 15504
+[9008] 28 May 10:59:04.702 # fork operation complete
+[9008] 28 May 10:59:04.703 * Background saving terminated with success
+[9008] 28 May 11:14:05.067 * 1 changes in 900 seconds. Saving...
+[9008] 28 May 11:14:05.093 * Background saving started by pid 17352
+[9008] 28 May 11:14:05.295 # fork operation complete
+[9008] 28 May 11:14:05.296 * Background saving terminated with success
+[9008] 28 May 13:55:49.393 # User requested shutdown...
+[9008] 28 May 13:55:49.398 * Saving the final RDB snapshot before exiting.
+[9008] 28 May 13:55:49.411 * DB saved on disk
+[9008] 28 May 13:55:49.413 # Redis is now ready to exit, bye bye...

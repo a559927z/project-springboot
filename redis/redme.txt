@@ -1,0 +1,11 @@
+redis.conf的配置：
+
+bind 127.0.0.1
+requirepass 12345678
+maxmemory 1024000000
+
+启动
+cd D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100
+D:
+redis-server.exe redis.windows.conf
+

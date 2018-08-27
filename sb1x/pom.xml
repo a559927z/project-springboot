@@ -60,6 +60,16 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+
         <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -77,6 +87,11 @@
             <groupId>org.webjars.bower</groupId>
             <artifactId>bootstrap</artifactId>
             <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.0</version>
         </dependency>
         <!--<dependency>-->
             <!--<groupId>org.webjars.bower</groupId>-->
@@ -99,17 +114,17 @@
     </build>
     <repositories>
         <repository>
-            <id>nexus</id>
-            <name>local private nexus</name>
-            <url>http://nexus.gs.chinahrd.net/content/groups/public</url>
+            <id>central</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
             <layout>default</layout>
+            <!-- 是否开启发布版构件下载 -->
             <releases>
                 <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
             </releases>
+            <!-- 是否开启快照版构件下载 -->
             <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
