@@ -9,3 +9,6 @@ cd D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100
 D:
 redis-server.exe redis.windows.conf
 
+或
+D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100\redis-server.exe D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100\redis.windows.conf
+

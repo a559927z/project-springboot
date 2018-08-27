@@ -4,6 +4,7 @@ import com.ks.dto.SbUser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@RequestMapping("/hello")
 @RestController
 public class HelloWorldController {
 
@@ -17,7 +18,9 @@ public class HelloWorldController {
     public SbUser getUser() {
         SbUser user = new SbUser();
         user.setUserName("小明");
-        user.setPassWord("xxxx");
+        user.setPassword("xxxx");
         return user;
     }
+
+
 }

@@ -31,22 +31,30 @@ public class SbUser implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
+
     @Column(nullable = false, unique = true)
     private String userName;
+
     @Column(nullable = false)
-    private String passWord;
+    private String password;
+
     @Column(nullable = false, unique = true)
     private String email;
+
     @Column(nullable = true, unique = true)
     private String nickName;
+
     @Column(nullable = false)
     private String regTime;
 
-    public SbUser(String email, String nickName, String userName, String passWord, String regTime) {
+    @Column(nullable = false)
+    private int age;
+
+    public SbUser(String email, String nickName, String userName, String password, String regTime) {
         super();
         this.email = email;
         this.nickName = nickName;
-        this.passWord = passWord;
+        this.password = password;
         this.userName = userName;
         this.regTime = regTime;
     }

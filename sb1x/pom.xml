@@ -65,6 +65,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-redis</artifactId>
         </dependency>
+        <!--共享Session-spring-session-data-redis-->
+        <!--分布式系统中，sessiong共享有很多的解决方案，其中托管到缓存中应该是最常用的方案之一，-->
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
@@ -99,6 +101,11 @@
             <!--<version>1.9.0</version>-->
         <!--</dependency>-->
 
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
     </dependencies>
 
     <build>

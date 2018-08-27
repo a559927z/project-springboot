@@ -21,4 +21,9 @@ public interface UserRepository extends JpaRepository<SbUser, Long> {
 
     SbUser findByUserNameOrEmail(String username, String email);
 
+    SbUser findById(long id);
+
+    Long deleteById(Long id);
+
+
 }

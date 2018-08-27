@@ -7,6 +7,8 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
  * Title: ${type_name} <br/>
  * <p>
  * Description: <br/>
+ * maxInactiveIntervalInSeconds: 设置Session失效时间，
+ * 使用Redis Session之后，原Boot的server.session.timeout属性不再生效
  *
  * @author jxzhang
  * @DATE 2018年08月27日 11:18
@@ -14,7 +16,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
  * ${tags}
  */
 @Configuration
-@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 86400*30)
+@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 86400 * 30)
 public class SessionConfig {
 
 }
