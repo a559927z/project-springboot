@@ -6,6 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 /**
+ * http://www.ityouknow.com/springboot/2016/08/20/spring-boo-jpa.html
  * Title: ${type_name} <br/>
  * <p>
  * Description: <br/>

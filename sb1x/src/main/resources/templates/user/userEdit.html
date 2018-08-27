@@ -17,12 +17,7 @@
 <h1>修改用户</h1>
 <br/><br/>
 <div class="with:80%">
-    <!--<div th:object="${session.user}">-->
-        <!--<div th:text="${session.user.id}">1</div>-->
-    <!--</div>-->
-    <!--<div th:object="${user}">-->
-        <!--<div th:text="*{id}">1</div>-->
-    <!--</div>-->
+
     <form class="form-horizontal" th:action="@{/user/edit}" th:object="${user}" method="post">
         <input type="hidden" name="id" th:value="*{id}"/>
         <div class="form-group">

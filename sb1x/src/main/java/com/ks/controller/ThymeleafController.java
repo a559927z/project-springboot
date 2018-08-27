@@ -32,34 +32,34 @@ import java.util.Locale;
 @Controller
 public class ThymeleafController {
 
-    @Autowired
-    private MessageRepository messageRepository;
-
-    //    @GetMapping(params = "/form")
-    @GetMapping("/form")
-    public String createForm(@ModelAttribute SbMessage message) {
-        return "messages/form";
-    }
-
-
-    /**
-     * localhost:8080/sb1x/thymeleaf/create
-     *
-     * @param message
-     * @param result
-     * @param redirect
-     * @return
-     */
-    @PostMapping("/create")
-    public ModelAndView create(@Valid SbMessage message, BindingResult result,
-                               RedirectAttributes redirect) {
-        if (result.hasErrors()) {
-            return new ModelAndView("messages/form", "formErrors", result.getAllErrors());
-        }
-        message = this.messageRepository.save(message);
-        redirect.addFlashAttribute("globalMessage", "Successfully created a new message");
-        return new ModelAndView("redirect:/{message.id}", "message.id", message.getId());
-    }
+//    @Autowired
+//    private MessageRepository messageRepository;
+//
+//    //    @GetMapping(params = "/form")
+//    @GetMapping("/form")
+//    public String createForm(@ModelAttribute SbMessage message) {
+//        return "messages/form";
+//    }
+//
+//
+//    /**
+//     * localhost:8080/sb1x/thymeleaf/create
+//     *
+//     * @param message
+//     * @param result
+//     * @param redirect
+//     * @return
+//     */
+//    @PostMapping("/create")
+//    public ModelAndView create(@Valid SbMessage message, BindingResult result,
+//                               RedirectAttributes redirect) {
+//        if (result.hasErrors()) {
+//            return new ModelAndView("messages/form", "formErrors", result.getAllErrors());
+//        }
+//        message = this.messageRepository.save(message);
+//        redirect.addFlashAttribute("globalMessage", "Successfully created a new message");
+//        return new ModelAndView("redirect:/{message.id}", "message.id", message.getId());
+//    }
 
 
     @RequestMapping("/hi")

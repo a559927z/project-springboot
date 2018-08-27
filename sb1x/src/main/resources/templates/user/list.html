@@ -14,7 +14,7 @@
         <thead>
         <tr>
             <th>#</th>
-            <th>User Name</th>
+            <th>UserName</th>
             <th>Password</th>
             <th>Age</th>
             <th>Edit</th>
@@ -33,11 +33,38 @@
         </tbody>
     </table>
 </div>
+
 <div class="form-group">
     <div class="col-sm-2 control-label">
         <a href="/toAdd" th:href="@{/user/toAdd}" class="btn btn-info">add</a>
     </div>
 </div>
 
+<th:block>==================================================</th:block>
+<div>
+    <h1>$,*</h1>
+    <span th:text="${users[0].userName}"></span>
+    变量表达式和星号表达有什么区别吗？
+    如果不考虑上下文的情况下，两者没有区别；星号语法评估在选定对象上表达，而不是整个上下文
+    什么是选定对象？就是父标签的值，如下：
+    <p> ${users[0].userName}</p>
+    <div th:object="${users[0]}">
+        <span th:text="${users[0].userName}"></span>
+    </div>
+    <p> *{userName}</p>
+    <div th:object="${users[0]}">
+        <span th:text="*{userName}"></span>
+    </div>
+</div>
+<th:block>==================================================</th:block>
+<div>
+    <h1>表达式工具对象</h1>
+    https://blog.csdn.net/qq_18838763/article/details/52915964
+</div>
+<th:block>==================================================</th:block>
+<!--<div>-->
+    <!--<h1>表达式工具对象</h1>-->
+    <!--<span th:text="#{application(${com.ks.title})}"></span>-->
+<!--</div>-->
 </body>
 </html>

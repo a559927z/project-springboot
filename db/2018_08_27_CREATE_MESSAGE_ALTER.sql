@@ -19,6 +19,4 @@ COMMENT '年龄'
 ALTER TABLE `sb_user`
   ALTER `pass_word` DROP DEFAULT;
 ALTER TABLE `sb_user`
-  CHANGE COLUMN `pass_word` `password` VARCHAR(255) NOT NULL
-COMMENT '密码'
-  AFTER `nick_name`;
+  CHANGE COLUMN `pass_word` `password` VARCHAR(50) NULL AFTER `user_name`

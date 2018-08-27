@@ -60,11 +60,25 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!--redis-->
+        <!--热部署-->
+        <!--“File” -> “Settings” -> “Build,Execution,Deplyment” -> “Compiler”，选中打勾 “Build project automatically”-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
+
+        <!--redis-->
+        <!--springBoot的版本为1.4.7 以上的时候，spring-boot-starter-redis 就空了。要想引入redis就只能选择有data的。-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>redis.clients</groupId>-->
+            <!--<artifactId>jedis</artifactId>-->
+        <!--</dependency>-->
+
         <!--共享Session-spring-session-data-redis-->
         <!--分布式系统中，sessiong共享有很多的解决方案，其中托管到缓存中应该是最常用的方案之一，-->
         <dependency>

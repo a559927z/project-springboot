@@ -6,6 +6,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.DateFormat;
@@ -34,4 +37,34 @@ public class UserRepositoryTests {
         userRepository.delete(userRepository.findByUserName("aa"));
     }
 
+
+    /**
+     * 基本查询
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testBaseQuery() throws Exception {
+        SbUser user = new SbUser();
+        userRepository.findAll();
+        userRepository.findOne(1l);
+        userRepository.save(user);
+        userRepository.delete(user);
+        userRepository.count();
+        userRepository.exists(1l);
+    }
+
+    /**
+     * 分页查询
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testPageQuery() throws Exception {
+        int page = 1, size = 2;
+        Sort sort = new Sort(Sort.Direction.DESC, "id");
+        Pageable pageable = new PageRequest(page, size, sort);
+        userRepository.findALL(pageable);
+        userRepository.findByUserName("testName", pageable);
+    }
 }

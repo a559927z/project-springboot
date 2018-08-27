@@ -27,7 +27,7 @@ public class UserController {
     /**
      * 重定向列表页
      */
-    private final String REDIRECT_LIST = "redirect:/user/list";
+    private final String REDIRECT_LIST = "redirect:user/list";
 
     @Resource
     UserService userService;
