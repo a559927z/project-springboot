@@ -24,10 +24,10 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest //(classes = Application.class)
-public class UserMapperAnnTest {
+public class UserAnnMapperTest {
 
     @Autowired
-    private UserMapper userMapper;
+    private UserAnnMapper userMapper;
 
     @Test
     public void testInsert() throws Exception {

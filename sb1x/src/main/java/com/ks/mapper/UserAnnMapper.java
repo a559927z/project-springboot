@@ -18,7 +18,7 @@ import java.util.List;
  */
 //@Mapper
 //@Repository
-public interface UserMapper {
+public interface UserAnnMapper {
 
     @Select("SELECT * FROM sb_user")
     @Results({
