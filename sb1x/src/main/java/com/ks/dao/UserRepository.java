@@ -1,15 +1,7 @@
 package com.ks.dao;
 
 import com.ks.dto.SbUser;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * Title: ${type_name} <br/>
@@ -55,9 +47,7 @@ public interface UserRepository extends JpaRepository<SbUser, Long> {
 
     //    基本上SQL体系中的关键词都可以使用，例如：LIKE、 IgnoreCase、 OrderBy。
 //    List<SbUser> findByEmailLike(String email);
-//
 //    SbUser findByUserNameIgnoreCase(String userName);
-//
 //    List<SbUser> findByUserNameOrderByEmailDesc(String email);
 
 
