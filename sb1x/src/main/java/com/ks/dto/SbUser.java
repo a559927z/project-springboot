@@ -1,5 +1,6 @@
 package com.ks.dto;
 
+import com.ks.enums.UserSexEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -51,6 +52,8 @@ public class SbUser implements Serializable {
     @Column(nullable = false)
     private int age;
 
+    private UserSexEnum userSex;
+
     public SbUser(String email, String nickName, String userName, String password, String regTime) {
         super();
         this.email = email;
@@ -58,5 +61,12 @@ public class SbUser implements Serializable {
         this.password = password;
         this.userName = userName;
         this.regTime = regTime;
+    }
+
+    public SbUser(String userName, String password, UserSexEnum userSexEnum) {
+        super();
+        this.userName = userName;
+        this.password = password;
+        this.userSex = userSexEnum;
     }
 }

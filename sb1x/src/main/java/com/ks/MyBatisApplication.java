@@ -3,10 +3,9 @@
 //import org.mybatis.spring.annotation.MapperScan;
 //import org.springframework.boot.SpringApplication;
 //import org.springframework.boot.autoconfigure.SpringBootApplication;
-//import org.springframework.boot.builder.SpringApplicationBuilder;
-//import org.springframework.boot.web.support.SpringBootServletInitializer;
 //
 ///**
+// * (六)
 // * http://www.ityouknow.com/springboot/2016/11/06/spring-boo-mybatis.html
 // * Title: ${type_name} <br/>
 // * <p>
