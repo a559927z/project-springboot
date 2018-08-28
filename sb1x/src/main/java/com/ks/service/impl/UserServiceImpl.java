@@ -1,10 +1,8 @@
 package com.ks.service.impl;
 
-import com.google.common.collect.Lists;
 import com.ks.dao.UserRepository;
 import com.ks.dto.SbUser;
 import com.ks.service.UserService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
