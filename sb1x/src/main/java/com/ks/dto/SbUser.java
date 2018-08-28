@@ -49,7 +49,6 @@ public class SbUser implements Serializable {
     @Column(nullable = false, unique = true)
     private String userName;
 
-    @Column(nullable = false)
     private int age;
 
     private UserSexEnum userSex;

@@ -17,6 +17,7 @@ import java.util.List;
  * ${tags}
  */
 //@Mapper
+//@Repository
 public interface UserMapper {
 
     @Select("SELECT * FROM sb_user")
@@ -33,10 +34,10 @@ public interface UserMapper {
     })
     SbUser getOne(Long id);
 
-    @Insert("INSERT INTO sb_user(userName,password,user_sex) VALUES(#{userName}, #{password}, #{userSex})")
+    @Insert("INSERT INTO sb_user(user_name,password,user_sex) VALUES(#{userName}, #{password}, #{userSex})")
     void insert(SbUser user);
 
-    @Update("UPDATE sb_user SET userName=#{userName},nick_name=#{nickName} WHERE id =#{id}")
+    @Update("UPDATE sb_user SET user_name=#{userName},nick_name=#{nickName} WHERE id =#{id}")
     void update(SbUser user);
 
     @Delete("DELETE FROM sb_user WHERE id =#{id}")

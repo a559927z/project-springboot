@@ -12,11 +12,12 @@ CREATE TABLE `sb_message` (
 
 
 ALTER TABLE `sb_user`
-  ADD COLUMN `age` VARCHAR(255) NOT NULL
+  ADD COLUMN `age` VARCHAR(255)
 COMMENT '年龄'
   AFTER `user_name`;
 
 ALTER TABLE `sb_user`
   ALTER `pass_word` DROP DEFAULT;
 ALTER TABLE `sb_user`
-  CHANGE COLUMN `pass_word` `password` VARCHAR(50) NULL AFTER `user_name`
+  CHANGE COLUMN `pass_word` `password` VARCHAR(50) NULL
+  AFTER `user_name`
