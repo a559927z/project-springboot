@@ -5,9 +5,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * (一、二、三、四)
+ * (一、二)
  * http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html
- * <p>
+ * (三)
+ * http://www.ityouknow.com/springboot/2016/03/06/spring-boot-redis.html
+ * (四)
+ * http://www.ityouknow.com/springboot/2016/05/01/spring-boot-thymeleaf.html
  * (六)
  * http://www.ityouknow.com/springboot/2016/11/06/spring-boo-mybatis.html
  * <p>

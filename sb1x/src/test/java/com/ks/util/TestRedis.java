@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * http://www.ityouknow.com/springboot/2016/03/06/spring-boot-redis.html
  * Title: ${type_name} <br/>
  * <p>
  * Description: <br/>
