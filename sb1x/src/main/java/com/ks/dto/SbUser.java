@@ -3,6 +3,7 @@ package com.ks.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.io.Serializable;
 
@@ -21,6 +22,7 @@ import javax.persistence.Id;
  * @Verdion 1.0 版本
  * ${tags}
  */
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -33,19 +35,19 @@ public class SbUser implements Serializable {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String userName;
-
-    @Column(nullable = false)
-    private String password;
-
-    @Column(nullable = false, unique = true)
     private String email;
 
     @Column(nullable = true, unique = true)
     private String nickName;
 
     @Column(nullable = false)
+    private String password;
+
+    @Column(nullable = false)
     private String regTime;
+
+    @Column(nullable = false, unique = true)
+    private String userName;
 
     @Column(nullable = false)
     private int age;

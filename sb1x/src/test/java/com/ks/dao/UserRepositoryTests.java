@@ -1,11 +1,13 @@
 package com.ks.dao;
 
 import com.ks.dto.SbUser;
+import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -13,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 
 
 @RunWith(SpringRunner.class)
@@ -45,13 +48,15 @@ public class UserRepositoryTests {
      */
     @Test
     public void testBaseQuery() throws Exception {
-        SbUser user = new SbUser();
-        userRepository.findAll();
-        userRepository.findOne(1l);
+        System.out.println(userRepository.findAll());
+        System.out.println(userRepository.findOne(1l));
+
+        SbUser user = new SbUser("test@126.com", "test", "test", "cc123456", "2018-01-01");
         userRepository.save(user);
         userRepository.delete(user);
-        userRepository.count();
-        userRepository.exists(1l);
+
+        System.out.println(userRepository.count());
+        System.out.println(userRepository.exists(1l));
     }
 
     /**
@@ -61,10 +66,12 @@ public class UserRepositoryTests {
      */
     @Test
     public void testPageQuery() throws Exception {
-        int page = 1, size = 2;
-        Sort sort = new Sort(Sort.Direction.DESC, "id");
-        Pageable pageable = new PageRequest(page, size, sort);
-        userRepository.findALL(pageable);
-        userRepository.findByUserName("testName", pageable);
+//        Pageable pageable = new PageRequest(1, 20);
+//        userRepository.findALL(pageable);
+//        int page = 1, size = 2;
+//        Sort sort = new Sort(Sort.Direction.DESC, "id");
+//        Pageable pageable = new PageRequest(page, size, sort);
+//        userRepository.findALL(pageable);
+//        userRepository.findByUserName("testName", pageable);
     }
 }
