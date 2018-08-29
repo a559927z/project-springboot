@@ -31,9 +31,9 @@ public class UserAnnMapperTest {
 
     @Test
     public void testInsert() throws Exception {
-        userMapper.insert(new SbUser("aa", "a123456", UserSexEnum.MAN));
-        userMapper.insert(new SbUser("bb", "b123456", UserSexEnum.WOMAN));
-        userMapper.insert(new SbUser("cc", "b123456", UserSexEnum.WOMAN));
+        userMapper.insert(new SbUser("aa", "a123456", UserSexEnum.MAN.toString()));
+        userMapper.insert(new SbUser("bb", "b123456", UserSexEnum.WOMAN.toString()));
+        userMapper.insert(new SbUser("cc", "b123456", UserSexEnum.WOMAN.toString()));
 
         Assert.assertEquals(3, userMapper.getAll().size());
     }

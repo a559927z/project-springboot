@@ -1,4 +1,4 @@
-package com.ks;
+package com.ks.config;
 
 import org.apache.catalina.filters.RemoteIpFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 @Configuration
-public class WebConfiguration {
+public class WebConfig {
     @Bean
     public RemoteIpFilter remoteIpFilter() {
         return new RemoteIpFilter();

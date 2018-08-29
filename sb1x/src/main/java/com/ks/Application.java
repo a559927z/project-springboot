@@ -5,18 +5,32 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * (一、二)
+ * (一、二)    入门篇 web综合开发
  * http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html
- * (三)
+ * <p>
+ * (三)  Spring boot中Redis的使用
  * http://www.ityouknow.com/springboot/2016/03/06/spring-boot-redis.html
- * (四)
+ * <p>
+ * (四)  thymeleaf使用详解
  * http://www.ityouknow.com/springboot/2016/05/01/spring-boot-thymeleaf.html
- * (六)
+ * <p>
+ * (五)  spring data jpa的使用
+ * http://www.ityouknow.com/springboot/2016/08/20/spring-boo-jpa.html
+ * <p>
+ * (六)  如何优雅的使用mybatis
  * http://www.ityouknow.com/springboot/2016/11/06/spring-boo-mybatis.html
- * (七) springboot+mybatis多数据源最简解决方案
+ * <p>
+ * (七)  springboot+mybatis多数据源最简解决方案
  * http://www.ityouknow.com/springboot/2016/11/25/spring-boot-multi-mybatis.html
- * (八)
+ * <p>
+ * (八)  RabbitMQ详解
  * http://www.ityouknow.com/springboot/2016/11/30/spring-boot-rabbitMQ.html
+ * <p>
+ * (九)  定时任务
+ * http://www.ityouknow.com/springboot/2016/12/02/spring-boot-scheduler.html
+ * <p>
+ * <p>
+ * <p>
  * <p>
  * Title: ${type_name} <br/>
  * <p>
