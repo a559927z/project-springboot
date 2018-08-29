@@ -13,6 +13,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * http://www.ityouknow.com/springboot/2016/05/01/spring-boot-thymeleaf.html
  * (六)
  * http://www.ityouknow.com/springboot/2016/11/06/spring-boo-mybatis.html
+ * (七) springboot+mybatis多数据源最简解决方案
+ * http://www.ityouknow.com/springboot/2016/11/25/spring-boot-multi-mybatis.html
+ * (八)
+ * http://www.ityouknow.com/springboot/2016/11/30/spring-boot-rabbitMQ.html
  * <p>
  * Title: ${type_name} <br/>
  * <p>

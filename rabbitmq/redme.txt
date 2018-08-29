@@ -1,0 +1,19 @@
+安装
+https://www.cnblogs.com/ericli-ericli/p/5902270.html
+https://blog.csdn.net/hzw19920329/article/details/53156015
+
+下载erlang
+采用 Erlang 实现的工业级的消息队列(MQ)服务器，Rabbit MQ 是建立在Erlang OTP平台上。
+http://www.erlang.org/downloads
+
+
+下载rabbitmq
+http://www.rabbitmq.com/install-windows.html
+
+
+启动
+D:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmqctl.bat start
+停止
+D:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmqctl.bat stop
+查看
+D:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin\rabbitmqctl.bat status

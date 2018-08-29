@@ -53,6 +53,7 @@ public class SbUser implements Serializable {
 
     private UserSexEnum userSex;
 
+
     public SbUser(String email, String nickName, String userName, String password, String regTime) {
         super();
         this.email = email;
@@ -67,5 +68,11 @@ public class SbUser implements Serializable {
         this.userName = userName;
         this.password = password;
         this.userSex = userSexEnum;
+    }
+
+    public SbUser(String userName, String password) {
+        super();
+        this.userName = userName;
+        this.password = password;
     }
 }
