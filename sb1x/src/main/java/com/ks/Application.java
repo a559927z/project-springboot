@@ -3,6 +3,7 @@ package com.ks;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * (一、二)    入门篇 web综合开发
@@ -43,6 +44,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @MapperScan("com.ks.mapper")
 @SpringBootApplication
+@EnableScheduling
 public class Application {
 
     public static void main(String[] args) {

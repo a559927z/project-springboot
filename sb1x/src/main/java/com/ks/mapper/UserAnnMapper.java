@@ -3,6 +3,7 @@ package com.ks.mapper;
 import com.ks.dto.SbUser;
 import com.ks.enums.UserSexEnum;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -17,19 +18,19 @@ import java.util.List;
  * ${tags}
  */
 //@Mapper
-//@Repository
+@Repository
 public interface UserAnnMapper {
 
     @Select("SELECT * FROM sb_user")
     @Results({
-            @Result(property = "userSex", column = "user_sex", javaType = UserSexEnum.class),
+            @Result(property = "userSex", column = "user_sex", javaType = String.class),
             @Result(property = "nickName", column = "nick_name")
     })
     List<SbUser> getAll();
 
     @Select("SELECT * FROM sb_user WHERE id = #{id}")
     @Results({
-            @Result(property = "userSex", column = "user_sex", javaType = UserSexEnum.class),
+            @Result(property = "userSex", column = "user_sex", javaType = String.class),
             @Result(property = "nickName", column = "nick_name")
     })
     SbUser getOne(Long id);

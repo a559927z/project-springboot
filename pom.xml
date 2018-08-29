@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
         <guava.version>19.0</guava.version>
+        <quartz.version>2.2.1</quartz.version>
     </properties>
 
 
@@ -33,7 +34,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+<dependencies>
+    <!-- 定时器包 -->
+    <dependency>
+        <groupId>org.quartz-scheduler</groupId>
+        <artifactId>quartz</artifactId>
+        <version>${quartz.version}</version>
+    </dependency>
+</dependencies>
 
     <modules>
         <module>sb1x</module>

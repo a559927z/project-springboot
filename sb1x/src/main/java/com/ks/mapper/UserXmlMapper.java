@@ -1,6 +1,7 @@
 package com.ks.mapper;
 
 import com.ks.dto.SbUser;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
  * ${tags}
  */
 //@Mapper
-//@Repository
+@Repository
 public interface UserXmlMapper {
 
     List<SbUser> getAll();
