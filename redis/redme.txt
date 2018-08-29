@@ -7,9 +7,8 @@ maxmemory 1024000000
 启动
 cd D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100
 D:
-redis-server.exe redis.windows.conf
-
+.\redis-server.exe redis.windows.conf
 或
-D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100\redis-server.exe D:\MyXFiles\git\project\project-springboot\redis\Redis-x64-3.2.100\redis.windows.conf
+cd C:\MyXFiles\git\project-springboot\redis\Redis-x64-3.2.100\
+.\redis-server.exe redis.windows.conf
 
-C:\MyXFiles\git\project-springboot\redis\Redis-x64-3.2.100\redis-server.exe C:\MyXFiles\git\project-springboot\redis\Redis-x64-3.2.100\redis.windows-service.conf
