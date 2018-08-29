@@ -30,6 +30,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * (九)  定时任务
  * http://www.ityouknow.com/springboot/2016/12/02/spring-boot-scheduler.html
  * <p>
+ * (十)  邮件服务
+ * http://www.ityouknow.com/springboot/2017/05/06/springboot-mail.html
  * <p>
  * <p>
  * <p>
