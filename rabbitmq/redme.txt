@@ -13,7 +13,12 @@ http://www.erlang.org/downloads
 http://www.rabbitmq.com/install-windows.html
 
 
+C:\Windows\System32\drivers\etc\HOSTS
+127.0.0.1 主机名
 
+cd D:\workspace\project\project-springboot\rabbitmq\rabbitmq_server-3.7.7\sbin
+D:
+或
 cd C:\MyXFiles\git\project-springboot\rabbitmq\rabbitmq_server-3.7.7\sbin\
 rabbitmq-service install
 rabbitmq-plugins enable rabbitmq_management
