@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ks.mapper.JobMapper">
+
+    <resultMap id="JobInfoResultMap" type="com.ks.dto.JobInfo">
+        <id column="job_id" property="id" jdbcType="VARCHAR"/>
+        <result column="job_name" property="jobName" jdbcType="VARCHAR"/>
+        <result column="job_group" property="jobGroup" jdbcType="VARCHAR"/>
+        <result column="job_description" property="jobDescription" jdbcType="VARCHAR"/>
+        <result column="cron_expression" property="cronExpression" jdbcType="VARCHAR"/>
+        <result column="job_class" property="jobExecuteClass" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <parameterMap id="JobInfoParamMap" type="com.ks.dto.JobInfo">
+        <parameter property="jobName" jdbcType="VARCHAR"/>
+        <parameter property="jobGroup" jdbcType="VARCHAR"/>
+        <parameter property="jobDescription" jdbcType="VARCHAR"/>
+        <parameter property="cronExpression" jdbcType="VARCHAR"/>
+        <parameter property="jobExecuteClass" jdbcType="VARCHAR"/>
+    </parameterMap>
+
+    <select id="getAllEffectiveJob" resultMap="JobInfoResultMap">
+		SELECT * FROM `public_qrtz_task`
+	</select>
+
+    <select id="getJobInfo" parameterMap="JobInfoParamMap" resultMap="JobInfoResultMap">
+		select * from public_qrtz_task t
+		where t.job_name =#{jobName} and t.job_group=#{jobGroup}
+	</select>
+
+    <insert id="insertJobInfo" parameterMap="JobInfoParamMap">
+        INSERT INTO `public_qrtz_task` (
+        job_name,
+        job_group,
+        job_description,
+        job_status,
+        cron_expression,
+        job_class
+        )
+        VALUES (
+        #{jobName},
+        #{jobGroup},
+        #{jobDescription},
+        #{jobStatus},
+        #{cronExpression},
+        #{jobExecuteClass}
+        )
+
+    </insert>
+
+    <delete id="deleteJobInfo" parameterMap="JobInfoParamMap">
+		DELETE FROM `public_qrtz_task` WHERE job_name = #{jobName} and job_group = #{jobGroup}
+	</delete>
+
+    <update id="updateJobInfo" parameterMap="JobInfoParamMap">
+        update `public_qrtz_task` set cron_expression =#{cronExpression}
+         WHERE job_name = #{jobName} and job_group = #{jobGroup}
+    </update>
+</mapper>
