@@ -22,6 +22,13 @@ import java.util.Locale;
 @Controller
 public class ThymeleafController {
 
+    /**
+     * http://localhost:8080/sb1x/thymeleaf/hi
+     *
+     * @param locale
+     * @param model
+     * @return
+     */
     @RequestMapping("/hi")
     public String hello(Locale locale, Model model) {
         model.addAttribute("greeting", "Hello!");
