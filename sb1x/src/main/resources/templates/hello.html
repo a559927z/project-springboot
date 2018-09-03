@@ -1,18 +1,33 @@
 <html xmlns:th="http://www.thymeleaf.org">
-  <head th:include="layout :: htmlhead" th:with="title='Hello'"></head>
+<head th:include="top :: copy" th:with="title='Hello'"></head>
 
-  <body>
-    <div th:replace="layout :: navbar">(navbar)</div>
+<body>
+<div th:replace="layout :: navbar">(navbar)</div>
 
-    <div class="container">
-      <div class="starter-template">
+<div class="container">
+    <div class="starter-template">
         <h1>Spring MVC / Thymeleaf / Bootstrap</h1>
+        <!--页面通过Model取值-->
         <p class="lead" th:text="${greeting}">(greeting)</p>
         <p>The current time is <span th:text="${currentTime}">(time)</span></p>
-      </div>
     </div>
+    <div id="jqueryTest">
+        12313
+    </div>
+</div>
 
-    <div th:include="layout :: footer" id="footer">(footer)</div>
+<div th:include="layout :: footer" id="footer">(footer)</div>
 
-  </body>
+<script th:inline="javascript">
+    //    js通过model取值
+    var currentTime = [[${currentTime}]];
+    console.log(currentTime);
+
+    $(function () {
+        var text = $("#jqueryTest").text();
+        console.log(text);
+    });
+</script>
+
+</body>
 </html>
