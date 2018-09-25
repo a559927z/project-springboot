@@ -32,6 +32,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * <p>
  * (十)  邮件服务
  * http://www.ityouknow.com/springboot/2017/05/06/springboot-mail.html
+ * (十四)  shiro-登录认证和权限管理
+ * http://www.ityouknow.com/springboot/2017/06/26/springboot-shiro.html
  * <p>
  * <p>
  * <p>
